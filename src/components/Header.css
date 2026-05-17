@@ -1,0 +1,36 @@
+header {
+  text-align: center;
+  padding: 10px;
+  font-size: 2em;
+  background-color: #fff;
+
+  display: flex;
+  justify-content: space-between;
+  /*align-items: center; */
+  padding: 1rem;
+  align-items: flex-end;
+
+  /* border: 1px solid #ddd; */
+  border-radius: 10px; /* 카드 모서리를 둥글게 */
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 효과 */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+  color: rgb(244, 179, 179);
+}
+.header button {
+  background-color: rgb(250, 199, 199);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}

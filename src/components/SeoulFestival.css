@@ -1,0 +1,17 @@
+.SeoulFestival {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* 전체 화면 높이를 100%로 */
+  overflow: hidden; /* .App에서도 스크롤이 생기지 않도록 */
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  padding: 10px;
+  overflow: hidden;
+
+  flex-direction: row;
+  gap: 20px;
+  min-height: 0;
+}
