@@ -10,7 +10,7 @@ import SearchArea from "./SearchArea";
 
 export default function SeoulFestival() {
   const [selected, setSelected] = useState<Festival | null>(null);
-  const [language, setLanguage] = useState<"kr" | "en">("kr");
+  const [language, setLanguage] = useState<"kr" | "en">("en");
   const selectFestival = (festival: Festival) => {
     setSelected(festival);
   };

@@ -27,11 +27,20 @@ export default function SearchArea({ language }: SearchAreaProps) {
 
   url += `serviceKey=${ENV.OPEN_API_KEY}&numOfRows=10&pageNo=${page}&_type=json&MobileOS=WEB&MobileApp=aa&lDongRegnCd=11&arrange=D`;
 
+  /*
   if (query) {
     url += `&keyword=${encodeURIComponent(query)}`;
   } else {
     url += `&contentTypeId=15`;
+  } 
+    */
+
+  if (query) {
+    url += `&keyword=${encodeURIComponent(query)}`;
+  } else if (language === "kr") {
+    url += `&contentTypeId=15`;
   }
+
   const { documents } = useFetch(url);
   const resetPage = () => setPage(1);
 
